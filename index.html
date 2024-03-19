@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card left-card">
+      <textarea id="inputText" class="input" placeholder="Escribe aquí..."></textarea>
+      <div class="button-container">
+        <button id="encryptButton" class="button">Encriptar</button>
+        <button id="decryptButton" class="button">Desencriptar</button>
+      </div>
+    </div>
+    <div class="card right-card">
+      <textarea id="outputText" class="input" placeholder="Resultado"></textarea>
+      <button id="copyButton" class="button">Copiar</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

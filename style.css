@@ -1,0 +1,92 @@
+body {
+  background-color: #212121;
+}
+.input {
+  width: calc(85% - 12px);
+  height: calc(85% - 12px);
+  border: 2px solid transparent;
+  outline: none;
+  border-bottom: 2px solid #3f3f3f;
+  caret-color: #3f3f3f;
+  background-color: #212121;
+  padding: 5px;
+  transition: .5s linear;
+  font-family: monospace;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  resize: none;
+  word-wrap: break-word;
+  text-align: left;
+  color: #fa4753;
+}
+.input:focus {
+  border: 2px solid #fa4753;
+  caret-color: #fa4753;
+  box-shadow: 4px 4px 10px #070707;
+}
+.input:focus::placeholder {
+  color: #fa4753;
+} 
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 100vh;
+}
+.card {
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: transparent;
+  border: 2px solid #ff0707;
+  box-shadow: 2px 2px 15px #000000 inset;
+  text-align: center;
+  color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pacifico';
+  flex-direction: column;
+}
+.left-card {
+  background-color: transparent;  
+}
+.right-card {
+  background-color: transparent;
+}
+
+.button {
+  background: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  pointer-events: none;
+}
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.button:hover:before {
+  transform: translateX(0);
+}
